@@ -1,0 +1,29 @@
+.header {
+    height: 8vh;
+    background: black;
+    position: relative;
+}
+.footer{
+    height: 30vh;
+    background: black;
+}
+.content{
+    padding: 0 1%;
+}
+.logo {
+    position: absolute;
+    left: 7%;
+    top: 27%;
+}
+.categories{
+    left: 24%;
+    position: absolute;
+    top: 32%;
+    display: flex;
+    gap: 10%;
+}
+.right-corner{
+    position: absolute;
+    right: 3%;
+    top: 15%;
+}
