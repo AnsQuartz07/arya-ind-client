@@ -26,7 +26,7 @@
     position: absolute;
 }
 .single-box:hover {
-    transform: scale(1.5); /* Increase size on hover */
+    transform: scale(1.2); /* Increase size on hover */
     z-index: 2;    /* Increase size on hover */
     background: #1f1d1d82;
 }

@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import '../css/Layout.css';
 import Miscelleneous from "../Page/Miscelleneous";
 import Navbar from "./Navbar";
+import Home from "./Home";
 import Searchbar from "./Searchbar";
 import Backaction from '../Page/Backaction';
 const arr = [
@@ -13,38 +14,48 @@ const arr = [
         url: "/"
     },
     {
-        name: "Movies",
-        url: "/movies"
+        name: "UPSC",
+        url: "/upsc"
     },
     {
-        name: "Songs",
-        url: "/songs"
+        name: "JEE",
+        url: "/jee"
     },
     {
-        name: "Reels",
-        url: "/reels"
+        name: "NEET",
+        url: "/neet"
+    },
+    {
+        name: "NCERT",
+        url: "/ncert"
     },
     {
         name: "Others",
         url: "/others"
+    },
+    {
+        name: "Anshu",
+        url: "/anshu"
     }
 ];
-const Layout = function () {
+
+const Layout = function (content) {
     const [categories, setCategories] = useState([]);
     const [videos, setVideos] = useState([]);
     useEffect(() => {
         setCategories(arr);
-    }, [categories])
+    }, [])
+    // useEffect(function, [])
     const openNewPage = (category) => {
-    }    
+    }
     // const history = useHistory();
     const onSearch = (e) => {
         // history.push(`/search?query=${e}`)
-        Backaction.getSearchList(e).then( items => {
-            
-            setVideos(items.map( ele => {
+        Backaction.getSearchList(e).then(items => {
+
+            setVideos(items.map(ele => {
                 return {
-                    url: 'https://www.youtube.com/embed/' + ele.id.videoId +'?'
+                    url: 'https://www.youtube.com/embed/' + ele.id.videoId + '?'
                 }
             }));
         })
@@ -53,32 +64,30 @@ const Layout = function () {
     }
     return (
         <BrowserRouter>
-        
-        <div style={{background: 'black'}}>
-            <div className="header" >
-                <div className="logo">
-                    <img style={{height: "auto", width: "130px"}} src="/images/freeflix_logo2.png" />
-                </div>
-                <div className="categories">
-                    <Navbar category={categories} />
-                </div>
-                <div className="right-corner">
-                    <Searchbar onSearch={onSearch} />
-                </div>
-            </div>
-            <div className="content" >                    
-                    <Routes>
-                    {categories && categories.map((ele, index) => {
-                        return (
-                            <Route exact path={ele.url} element={<Miscelleneous data={videos} />} />
-                        );
-                    })}
-                    </Routes>
-            </div>
-            <div className="footer" >
 
+            <div >
+                <div className="header" >
+                    <div className="logo">
+                        <img style={{ height: "auto", width: "130px" }} src="/images/freeflix_logo2.png" />
+                    </div>
+                    <div className="categories">
+                        <Navbar category={categories} />
+
+
+                    </div>
+                    <div className="right-corner">
+                        <Searchbar onSearch={onSearch} />
+                    </div>
+                </div>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    {/* <Route path="/upsc" element={<UPSC />} /> */}
+                    {/* <Route path="/jee" element={<Contact />} /> */}
+                </Routes>
+                <div className="footer" >
+
+                </div>
             </div>
-        </div>
         </BrowserRouter>
     )
 }

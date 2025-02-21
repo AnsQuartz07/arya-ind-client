@@ -11,21 +11,22 @@ const defaultLinks = [
     {url: "https://www.youtube.com/embed/7cQ5IAYMFZk?si=V7vUmV1CGK-olveH"},
     {url: "https://www.youtube.com/embed/RyZfsWf0wG8?si=QZAg-McY2Oqk2TUQ"}
 ]
+
 const Miscelleneous = (props) => {
     const [arr, setArr] = useState(defaultLinks);
     const [currentVideo, setCurrentVideo] = useState();
-    const [mainVideo, setMainVideo] = useState();
+    const [mainVideo, setMainVideo] = useState("https://www.youtube.com/embed/ARWz_c3rEhM?");
     const [hoveredIndex, setHoveredIndex] = useState(-1);
 
-    useEffect( () => {
-        Backaction.getRecommendedMovies().then( res => {
-            setArr( res.map( ele => {
-                return {
-                    url: ele.id.videoId
-                }
-            }))
-        })
-    })
+    // useEffect( () => {
+    //     Backaction.getRecommendedMovies().then( res => {
+    //         setArr( res.map( ele => {
+    //             return {
+    //                 url: ele.id.videoId
+    //             }
+    //         }))
+    //     })
+    // })
     // const iframes = useRef([]);
     const playVideo = (ele) => {
         setMainVideo(ele + '&autoplay=1')
@@ -40,7 +41,7 @@ const Miscelleneous = (props) => {
                 <iframe src={mainVideo} frameborder="0" allowfullscreen></iframe>
             </div>
             <div className="miscellaneous-grid">
-                {props.data && props.data.map((ele, index) => {
+                {arr && arr.map((ele, index) => {
                     return (
                         <div 
                             key={index}

@@ -9,6 +9,7 @@ const Searchbar = ({ onSearch }) => {
     onSearch(searchTerm);
   };
   const searchChange = (e) => {
+    console.log("anshu ne kya type kiya", e.target);
     setSearchTerm(e.target.value)
   }
   const handleKeyDown = (event) => {
@@ -26,7 +27,7 @@ const Searchbar = ({ onSearch }) => {
         onChange={(e) => searchChange(e)}
         onKeyDown={handleKeyDown}
       />
-      <button onClick={handleSearch}>
+      <button onClick={handleSearch} style={{color: 'white'}}>
         <img width={"30px"} src='/images/search.png' />
       </button>
     </div>
