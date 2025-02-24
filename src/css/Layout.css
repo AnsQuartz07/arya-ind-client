@@ -1,7 +1,11 @@
 .header {
-    height: 8vh;
+    height: 10vh;
     background: black;
-    position: relative;
+    /* position: relative; */
+    padding: 10px 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .footer{
     height: 30vh;
@@ -11,9 +15,9 @@
     padding: 0 1%;
 }
 .logo {
-    position: absolute;
-    left: 7%;
-    top: 27%;
+    /* position: absolute;
+    left: 7%; */
+    /* top: 27%; */
 }
 .categories{
     left: 24%;
@@ -23,7 +27,7 @@
     gap: 10%;
 }
 .right-corner{
-    position: absolute;
+    /* position: absolute;
     right: 3%;
-    top: 15%;
+    top: 15%; */
 }

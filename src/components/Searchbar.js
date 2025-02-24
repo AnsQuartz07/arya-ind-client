@@ -27,7 +27,7 @@ const Searchbar = ({ onSearch }) => {
         onChange={(e) => searchChange(e)}
         onKeyDown={handleKeyDown}
       />
-      <button onClick={handleSearch} style={{color: 'white'}}>
+      <button onClick={handleSearch} style={{ color: 'white' }}>
         <img width={"30px"} src='/images/search.png' />
       </button>
     </div>

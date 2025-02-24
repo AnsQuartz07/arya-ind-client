@@ -8,6 +8,9 @@ import Navbar from "./Navbar";
 import Home from "./Home";
 import Searchbar from "./Searchbar";
 import Backaction from '../Page/Backaction';
+import Category from "./Category.js";
+import Subjects from "./Subjects.js";
+import Teachers from "./Teachers.js";
 const arr = [
     {
         name: "Home",
@@ -26,16 +29,12 @@ const arr = [
         url: "/neet"
     },
     {
-        name: "NCERT",
-        url: "/ncert"
+        name: "CBSE",
+        url: "/cbse"
     },
     {
-        name: "Others",
-        url: "/others"
-    },
-    {
-        name: "Anshu",
-        url: "/anshu"
+        name: "Miscellaneous",
+        url: "/misc"
     }
 ];
 
@@ -68,21 +67,24 @@ const Layout = function (content) {
             <div >
                 <div className="header" >
                     <div className="logo">
-                        <img style={{ height: "auto", width: "130px" }} src="/images/freeflix_logo2.png" />
+                        <img style={{ height: "auto", width: "130px" }} src="/images/inde.png" />
                     </div>
-                    <div className="categories">
-                        <Navbar category={categories} />
-
-
-                    </div>
+                    <Navbar category={categories} />
+                    {/* <div className="categories">
+                    </div> */}
                     <div className="right-corner">
                         <Searchbar onSearch={onSearch} />
                     </div>
                 </div>
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    {/* <Route path="/upsc" element={<UPSC />} /> */}
-                    {/* <Route path="/jee" element={<Contact />} /> */}
+                    <Route path="/category?" element={<Category />} />
+                    <Route path="/upsc" element={<Subjects course='upsc' />} />
+                    <Route path="/neet" element={<Subjects course='neet' />} />
+                    <Route path="/jee" element={<Subjects course='jee' />} />
+                    <Route path="/cbse" element={<Subjects course='cbse' />} />
+                    <Route path="/misc" element={<Subjects course='misc' />} />
+                    <Route path="/teachers" element={<Teachers />} />
                 </Routes>
                 <div className="footer" >
 

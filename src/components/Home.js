@@ -8,6 +8,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import '../css/Home.css';
+import '../css/Subjects.css';
 
 
 const Home = () => {
@@ -124,10 +125,32 @@ const Home = () => {
         },
     ];
 
+    const swiperFunction = (slides) => {
+        return (<Swiper
+            modules={[Navigation]}
+            navigation
+            spaceBetween={10}
+            slidesPerView={'auto'} // Adjust width dynamically
+            slidesPerGroup={5}
+            loop={false}
+        >
+            {slides.map((slide, index) => (
+                <SwiperSlide key={index} style={{ width: "250px" }}> {/* Adjust width of each card */}
+                    <div className="carousel-card">
+                        <img src={slide.img} alt={slide.title} />
+                        <p className='carousel-card p'>{slide.title}</p>
+                    </div>
+                </SwiperSlide>
+            ))}
+        </Swiper>)
+    }
     return (
-        <div className="container"> {/* Added container */}
-            <div className="row" style={{ display: 'flex' }}>
-                <div className="col-6" style={{ width: '60%' }}>
+        <div >
+            <div className="banner">
+                <img className="banner-image" src={'/images/equity.png'} alt="Banner" />
+            </div>
+            <div style={{ display: 'flex' }}>
+                <div style={{ width: '60%' }}>
                     <div style={styles.carouselWrapper}>
                         <div style={styles.carouselContainer}>
                             <Swiper
@@ -150,7 +173,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="col-6" > {/* Changed col-4 to col-6 to match grid */}
+                <div  > {/* Changed col-4 to col-6 to match grid */}
                     <img
                         style={{ padding: '13%' }}
                         src="https://storage.googleapis.com/tb-img/production/18/08/Capture%2029.PNG"
@@ -160,27 +183,31 @@ const Home = () => {
                 </div>
             </div>
             <div className="carousel-container">
-                <div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <h1>Continue Watching...</h1>
-                    
+                    <a href='/category?cat=hist' style={{ height: '28px' }}>
+                        <button style={{ cursor: 'pointer' }} >Show more</button>
+                    </a>
                 </div>
-                <Swiper
-                    modules={[Navigation]}
-                    navigation
-                    spaceBetween={10}
-                    slidesPerView={'auto'} // Adjust width dynamically
-                    slidesPerGroup={5}
-                    loop={false}
-                >
-                    {slides.map((slide, index) => (
-                        <SwiperSlide key={index} style={{ width: "250px" }}> {/* Adjust width of each card */}
-                            <div className="carousel-card">
-                                <img src={slide.img} alt={slide.title} />
-                                <p className='carousel-card p'>{slide.title}</p>
-                            </div>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
+                {swiperFunction(slides)}
+            </div>
+            <div className="carousel-container">
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <h1>Recommended Lectures</h1>
+                    <a href='/category?cat=recom' style={{ height: '28px' }}>
+                        <button style={{ cursor: 'pointer' }} >Show more</button>
+                    </a>
+                </div>
+                {swiperFunction(slides)}
+            </div>
+            <div className="carousel-container">
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <h1>Most Popular Videos</h1>
+                    <a href='/category?cat=pop' style={{ height: '28px' }}>
+                        <button style={{ cursor: 'pointer' }} >Show more</button>
+                    </a>
+                </div>
+                {swiperFunction(slides)}
             </div>
         </div>
     );

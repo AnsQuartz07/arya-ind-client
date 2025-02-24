@@ -1,0 +1,27 @@
+.element {
+    height: 135px;
+    display: flex;
+}
+.lectureInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 65%;
+}
+.videoTitle{
+    height: 60%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    overflow: hidden;
+}
+.mar0 {
+    margin: 0;
+}
+.pad1 {
+    padding: 1%;
+}
+.videoSize {
+    height: 100%;
+    border-radius: 12px;
+}
