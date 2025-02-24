@@ -45,7 +45,7 @@ const Teachers = function ({ props, placeholder = "" }) {
                     return (
                         <div className="grid-box"
                             style={{ background: `linear-gradient(${buttonColor ? buttonColor : '135deg, #C6EA8D ,  #FE90AF'})` }}
-                            onClick={() => navigate("/page1")}
+                            onClick={() => navigate("/lectures", {state: {...t, buttonColor}, })}
                         >
                             <h1>{t.name}</h1>
                         </div>

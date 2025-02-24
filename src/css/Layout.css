@@ -8,8 +8,12 @@
     align-items: center;
 }
 .footer{
-    height: 30vh;
+    height: 13vh;
     background: black;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-around;
 }
 .content{
     padding: 0 1%;
@@ -30,4 +34,18 @@
     /* position: absolute;
     right: 3%;
     top: 15%; */
+}
+.footer-text {
+    margin: 0;
+    color: white;
+    font-family: monospace;
+    font-size: x-large;
+}
+.icon-box {
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+    background: white;
+    padding: 5px;
+    align-items: center;
 }

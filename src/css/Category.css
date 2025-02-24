@@ -7,6 +7,7 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 65%;
+    padding: 3%;
 }
 .videoTitle{
     height: 60%;
@@ -14,6 +15,13 @@
     overflow-wrap: break-word;
     white-space: normal;
     overflow: hidden;
+}
+.lectures-sec {
+    padding: 20px;
+    margin: 2%;
+    width: 56%;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #ddd6f3, #faaca8);
 }
 .mar0 {
     margin: 0;

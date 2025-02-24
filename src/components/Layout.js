@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { FaInstagram, FaFacebook, FaGithub, FaYoutube, FaLinkedin } from "react-icons/fa";
 // import { useHistory } from 'react-router-dom';
 // import {useHistory} from 'react-router';
 import '../css/Layout.css';
@@ -11,6 +12,7 @@ import Backaction from '../Page/Backaction';
 import Category from "./Category.js";
 import Subjects from "./Subjects.js";
 import Teachers from "./Teachers.js";
+import Lectures from "./Lectures.js";
 const arr = [
     {
         name: "Home",
@@ -85,9 +87,28 @@ const Layout = function (content) {
                     <Route path="/cbse" element={<Subjects course='cbse' />} />
                     <Route path="/misc" element={<Subjects course='misc' />} />
                     <Route path="/teachers" element={<Teachers />} />
-                </Routes>
-                <div className="footer" >
+                    <Route path="/lectures" element={<Lectures />} />
 
+                </Routes>
+                <div className="footer">
+                    <p className="footer-text">Designed & Developed by: <span className="">Anshu Kumar</span></p>
+                    <div className="icon-box">
+                        <a href="https://www.instagram.com/call_me_anshu_____?igsh=MW4wM3kxNWZ4c210bw==" target="_blank" rel="noopener noreferrer">
+                            <FaInstagram style={{ color: "#E1306C", fontSize: "25px" }} />
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100010394683455&mibextid=rS40aB7S9Ucbxw6v" target="_blank" rel="noopener noreferrer">
+                            <FaFacebook style={{ color: "#1877F2", fontSize: "25px" }} />
+                        </a>
+                        <a href="https://github.com/AnsQuartz07" target="_blank" rel="noopener noreferrer">
+                            <FaGithub style={{ color: "#333", fontSize: "25px" }} />
+                        </a>
+                        <a href="https://youtube.com/@anshukumar-jx8hx?si=vF4xgBJjSJqdult0" target="_blank" rel="noopener noreferrer">
+                            <FaYoutube style={{ color: "#FF0000", fontSize: "25px" }} />
+                        </a>
+                        <a href="https://linkedin.com/in/ans-algo" target="_blank" rel="noopener noreferrer">
+                            <FaLinkedin style={{ color: "#0077B5", fontSize: "25px" }} />
+                        </a>
+                    </div>
                 </div>
             </div>
         </BrowserRouter>

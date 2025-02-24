@@ -419,7 +419,7 @@ const Subjects = function (props) {
         else if (props.course === 'misc') {
             setTitle('Miscellaneous Discussions');
             setImageUrl('/images/misc.jpg');
-            setButtonColor('135deg, #2AFADF  ,  #9F44D3')
+            setButtonColor('135deg,rgb(122, 241, 226)  ,rgb(182, 113, 222)')
             setSubjects([{
                 name: 'Theory Of Relativity',
                 teachers: [{

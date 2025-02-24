@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../css/Navbar.css';
 const Navbar = (props) => {
     const [categories, setCategories] = useState([]);
-    const [activeIndex, setActiveIndex] = useState(0);
+    const [activeIndex, setActiveIndex] = useState(null);
     const [x, setX] = useState(0);
     const [y, setY] = useState(0);
     useEffect(() => {

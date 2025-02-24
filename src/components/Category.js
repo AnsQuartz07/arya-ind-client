@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const Category = function () {
 
-    const [data, setData] = useState([1, 1, 1]);
+    const [data, setData] = useState([1, 1, 1,2,2,2,2]);
     const [title, setTitle] = useState('');
     const location = useLocation();
     const queryParams = new URLSearchParams(location.search);
@@ -25,7 +25,7 @@ const Category = function () {
         }
     }, [cat]);
     return (
-        <div style={{ padding: '2%' }}>
+        <div className="lectures-sec">
             <h1>{title}</h1>
             <div>
                 {data.map((ele) => {
@@ -34,7 +34,7 @@ const Category = function () {
                             <div className="pad1" >
                                 <img className="videoSize" src='https://travellerscribe.com/wp-content/uploads/2023/07/Lal-Qila-Delhi.webp'></img>
                             </div>
-                            <div className="lectureInfo pad1">
+                            <div className="lectureInfo">
                                 <h3 className="videoTitle mar0">Title of the Videos</h3>
                                 <p className="mar0">Subject - Course name</p>
                                 <p className="mar0">2.3k views</p>
