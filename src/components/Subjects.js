@@ -12,7 +12,7 @@ const Subjects = function (props) {
     useEffect(() => {
         if (props.course === 'upsc') {
             setTitle('Union Public Service Comission');
-            setImageUrl('/images/upsc.jpg')
+            setImageUrl('https://i.postimg.cc/bNhqT4SQ/upsc.jpg')
             setButtonColor('135deg, #a9f1df, #ffbbbb')
             setSubjects([{
                 name: 'Geography',
@@ -64,7 +64,7 @@ const Subjects = function (props) {
         }
         else if (props.course === 'jee') {
             setTitle('JEE ( Mains + Advance )');
-            setImageUrl('/images/jee.jpg')
+            setImageUrl('https://i.postimg.cc/0ykH50hg/jee.jpg')
             setButtonColor('135deg, #BFF098,  #6FD6FF')
             setSubjects([{
                 name: 'Physics',
@@ -116,7 +116,7 @@ const Subjects = function (props) {
         }
         else if (props.course === 'neet') {
             setTitle('NEET (Medical)');
-            setImageUrl('/images/neet.jpg')
+            setImageUrl('https://i.postimg.cc/yYZ7XsN6/neet.jpg')
             setButtonColor('135deg, #E2D1C3 ,  #A890FE')
             setSubjects([{
                 name: 'Physics',
@@ -168,7 +168,7 @@ const Subjects = function (props) {
         }
         else if (props.course === 'cbse') {
             setTitle('CBSE Board Examination');
-            setImageUrl('/images/cbse.jpg');
+            setImageUrl('https://i.postimg.cc/Z54CDC2K/cbse.jpg');
             setButtonColor('135deg, #D8B5FF   , #38EF7D')
             setSubjects([{
                 name: 'Physics : Class X',
@@ -418,7 +418,7 @@ const Subjects = function (props) {
         }
         else if (props.course === 'misc') {
             setTitle('Miscellaneous Discussions');
-            setImageUrl('/images/misc.jpg');
+            setImageUrl('https://i.postimg.cc/4dsYjnm1/misc.jpg');
             setButtonColor('135deg,rgb(122, 241, 226)  ,rgb(182, 113, 222)')
             setSubjects([{
                 name: 'Theory Of Relativity',

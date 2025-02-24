@@ -47,7 +47,7 @@ function Lectures(props) {
                 {/* Teacher Info Card */}
                 <div className="course-card teacher-card">
                     <img
-                        src="/images/vikash.jpg"  // Replace with actual teacher image URL
+                        src="https://i.postimg.cc/fb0P1T6k/vikash.jpg"  // Replace with actual teacher image URL
                         alt="Amitabh Sharma"
                         className="teacher-img"
                     />

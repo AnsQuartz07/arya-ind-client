@@ -147,7 +147,7 @@ const Home = () => {
     return (
         <div >
             <div className="banner">
-                <img className="banner-image" src={'/images/equity.png'} alt="Banner" />
+                <img className="banner-image" src={'https://i.postimg.cc/W3FGbd2c/equity.png'} alt="Banner" />
             </div>
             <div style={{ display: 'flex' }}>
                 <div style={{ width: '60%' }}>
