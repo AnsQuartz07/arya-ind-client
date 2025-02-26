@@ -11,7 +11,7 @@
     /* background: linear-gradient(rgba(219, 110, 168, 0.6), rgba(86, 92, 209, 0.2)); */
     border-radius: 22px;
     position: sticky;
-    top: 30px;  /* Adjust this value as needed */
+    top: 30px; 
 }
 
 .course-card {
@@ -30,9 +30,6 @@
     /* transition: transform 0.3s ease-in-out; */
 }
 
-.course-card:hover {
-    /* transform: scale(1.05); */
-}
 
 .teacher-card {
     /* flex-direction: row; */

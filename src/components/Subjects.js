@@ -488,7 +488,7 @@ const Subjects = function (props) {
                     return (
                         <div className="grid-box"
                             style={{ background: `linear-gradient(${buttonColor ? buttonColor : '135deg, #C6EA8D ,  #FE90AF'})` }}
-                            onClick={() => navigate("/teachers", { state: { sub, buttonColor, imageUrl } })}
+                            onClick={() => navigate("/teachers", { state: { course: title, sub, buttonColor, imageUrl } })}
                         >
                             <h1>{sub.name}</h1>
                         </div>

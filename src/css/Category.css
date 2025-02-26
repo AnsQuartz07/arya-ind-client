@@ -1,6 +1,10 @@
-.element {
-    height: 135px;
+.video-container {
+    /* height: 168px; */
     display: flex;
+    background: rgb(116, 114, 118);
+    border-radius: 8px;
+    margin: 1%;
+    padding: 2%;
 }
 .lectureInfo {
     display: flex;
@@ -21,7 +25,7 @@
     margin: 2%;
     width: 56%;
     border-radius: 25px;
-    background: linear-gradient(135deg, #ddd6f3, #faaca8);
+    background: rgb(168, 171, 168);
 }
 .mar0 {
     margin: 0;

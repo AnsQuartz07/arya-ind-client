@@ -6,22 +6,22 @@
   }
   
   .carousel-card {
-    background: #222;
-    padding: 10px;
+    /* background: #222; */
+    /* padding: 10px; */
     border-radius: 10px;
     text-align: center;
   }
   
   .carousel-card img {
     width: 100%;
-    height: 120px; /* Set a fixed height */
-    object-fit: cover; /* Ensures the image scales properly without distortion */
+    height: 120px; 
+    object-fit: cover; 
     border-radius: 8px;
   }
   .carousel-card p {
-    white-space: nowrap;   /* Prevents text from wrapping */
-    overflow: hidden;      /* Hides overflowing text */
-    text-overflow: ellipsis; /* Adds '...' if the text is too long */
-    font-size: 14px;       /* Adjust font size as needed */
+    white-space: nowrap;   
+    overflow: hidden;      
+    text-overflow: ellipsis;
+    font-size: 14px;
   }
     

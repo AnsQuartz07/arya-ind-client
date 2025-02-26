@@ -21,12 +21,6 @@ const Teachers = function ({ props, placeholder = "" }) {
 
     return (
         <div>
-            {/* <div className="banner">
-                <img className="banner-image" src={imageUrl} alt="Banner" />
-                <div className="banner-overlay">
-                    <h1 className="banner-title">{title}</h1>
-                </div>
-            </div> */}
             <div className="banner" >
                 {!loaded && <img src={placeholder} className="placeholder" alt="placeholder" />}
                 <img
@@ -37,7 +31,8 @@ const Teachers = function ({ props, placeholder = "" }) {
                     placeholder="https://via.placeholder.com/300x200?text=Loading..."
                 />
                 <div className="banner-overlay">
-                    <h1 className="banner-title">{title}</h1>
+                    <h1 className="banner-title banner-font">{title}</h1>
+                    <h2 className="banner-title">{`- ${state.course} -`}</h2>
                 </div>
             </div>
             <div className="grid-container">
@@ -45,7 +40,7 @@ const Teachers = function ({ props, placeholder = "" }) {
                     return (
                         <div className="grid-box"
                             style={{ background: `linear-gradient(${buttonColor ? buttonColor : '135deg, #C6EA8D ,  #FE90AF'})` }}
-                            onClick={() => navigate("/lectures", {state: {...t, buttonColor}, })}
+                            onClick={() => navigate("/lectures", {state: {...t, buttonColor, subject: title, course: state.course}, })}
                         >
                             <h1>{t.name}</h1>
                         </div>

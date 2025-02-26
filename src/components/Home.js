@@ -9,19 +9,21 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import '../css/Home.css';
 import '../css/Subjects.css';
-
+import { videoData } from './Category';
 
 const Home = () => {
     const images = [
-        'https://plus.unsplash.com/premium_photo-1697729636512-61ef6695d115?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGFqJTIwbWFoYWwlMjBpbmRpYXxlbnwwfHwwfHx8MA%3D%3D',
-        'https://img-cdn.thepublive.com/fit-in/1280x720/filters:format(webp)/thetatva/media/post_attachments/wp-content/uploads/2020/12/53331482_2283781921869816_2361277172979920993_n.jpg',
-        'https://travellerscribe.com/wp-content/uploads/2023/07/Lal-Qila-Delhi.webp',
+        'https://i.postimg.cc/MHgFzt5n/pexels-espinozafotos-2269648.jpg',
+        'https://i.postimg.cc/fThybsPR/slider-4.jpg',
+        'https://i.postimg.cc/Pq8NxqdN/slider-3.jpg',
+        'https://i.postimg.cc/tg0pBNHC/slider-1.jpg',
+        'https://i.postimg.cc/VNcPqsjJ/slider-2.jpg',
     ];
     const styles = {
         carouselWrapper: {
             display: "flex",
             justifyContent: "flex-start", // Aligns the carousel to the left
-            padding: "13%", // Adds spacing around the carousel
+            padding: "2%", // Adds spacing around the carousel
         },
         carouselContainer: {
             width: "100%", // Takes full width of the wrapper
@@ -36,7 +38,7 @@ const Home = () => {
         },
         image: {
             width: "100%",
-            height: "100%",
+            height: "80vh",
             objectFit: "cover",
             borderRadius: "10px",
         }
@@ -124,7 +126,7 @@ const Home = () => {
             img: "https://lalqila.com/wp-content/uploads/2024/08/g7.jpg",
         },
     ];
-
+    console.log('asdfghjkjhgfds    ', videoData)
     const swiperFunction = (slides) => {
         return (<Swiper
             modules={[Navigation]}
@@ -137,7 +139,16 @@ const Home = () => {
             {slides.map((slide, index) => (
                 <SwiperSlide key={index} style={{ width: "250px" }}> {/* Adjust width of each card */}
                     <div className="carousel-card">
-                        <img src={slide.img} alt={slide.title} />
+                        <iframe
+                            src={slide.videoUrl}
+                            title="YouTube video player"
+                            frameBorder="0"
+                            width='100%'
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen>
+                        </iframe>
+                        {/* <img src={slide.img} alt={slide.title} /> */}
                         <p className='carousel-card p'>{slide.title}</p>
                     </div>
                 </SwiperSlide>
@@ -149,7 +160,7 @@ const Home = () => {
             <div className="banner">
                 <img className="banner-image" src={'https://i.postimg.cc/W3FGbd2c/equity.png'} alt="Banner" />
             </div>
-            <div style={{ display: 'flex' }}>
+            <div style={{ display: 'flex', background: 'black' }}>
                 <div style={{ width: '60%' }}>
                     <div style={styles.carouselWrapper}>
                         <div style={styles.carouselContainer}>
@@ -161,7 +172,7 @@ const Home = () => {
                                 loop={true}
                                 spaceBetween={10}
                                 slidesPerView={1}
-                                style={{ height: "100%" }} // Swiper takes full height
+                                style={{ height: "100%" }}
                             >
                                 {images.map((img, index) => (
                                     <SwiperSlide key={index} style={styles.slide}>
@@ -173,12 +184,11 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div  > {/* Changed col-4 to col-6 to match grid */}
+                <div  >
                     <img
-                        style={{ padding: '13%' }}
-                        src="https://storage.googleapis.com/tb-img/production/18/08/Capture%2029.PNG"
+                        style={{ padding: '10%' }}
+                        src="/images/inde.gif"
                         className="img-fluid"
-                        alt="Taj Mahal"
                     />
                 </div>
             </div>
@@ -189,7 +199,7 @@ const Home = () => {
                         <button style={{ cursor: 'pointer' }} >Show more</button>
                     </a>
                 </div>
-                {swiperFunction(slides)}
+                {swiperFunction(videoData)}
             </div>
             <div className="carousel-container">
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -198,7 +208,7 @@ const Home = () => {
                         <button style={{ cursor: 'pointer' }} >Show more</button>
                     </a>
                 </div>
-                {swiperFunction(slides)}
+                {swiperFunction(videoData)}
             </div>
             <div className="carousel-container">
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -207,7 +217,7 @@ const Home = () => {
                         <button style={{ cursor: 'pointer' }} >Show more</button>
                     </a>
                 </div>
-                {swiperFunction(slides)}
+                {swiperFunction(videoData)}
             </div>
         </div>
     );
