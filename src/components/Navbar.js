@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../css/Navbar.css';
-import { Menu } from 'lucide-react';
+// import { Menu } from 'lucide-react';
 const Navbar = (props) => {
     const [categories, setCategories] = useState([]);
     const [activeIndex, setActiveIndex] = useState(null);
@@ -24,7 +24,7 @@ const Navbar = (props) => {
             <nav className='phone-navbar'>
                 <div className='dropdown-container'>
                     <button className='menu-button' onClick={() => setShowDropdown(!showDropdown)}>
-                        <Menu color='white' size={35}  />
+                        {/* <Menu color='white' size={35}  /> */}
                     </button>
                     {showDropdown && (
                         <ul className='dropdown-menu'>
