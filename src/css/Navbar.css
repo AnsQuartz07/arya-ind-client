@@ -1,9 +1,7 @@
 .navbar {
-    /* border: 2px solid red; */
     height: 100%;
     z-index: 2;
-    display: flex
-;
+    display: flex;
     align-items: end;
     justify-content: space-between;
 }
@@ -12,13 +10,11 @@
     margin: 0px;
     padding: 0px;
     gap: 8px;
-    /* border: 2px solid white; */
     justify-content: center;
     align-items: center;
 }
 .navbar-box {
     display: flex;
-    /* border: 2px solid blue; */
     width: 120px;
     height: 37px;
     text-align: center;
@@ -54,4 +50,60 @@ li {
     margin: 0;
     font-weight: bold;
     color: black;
+}
+.phone-navbar {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.dropdown-container {
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+}
+
+.dropdown-menu  {
+    position: absolute;
+    top: 99%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0;
+    background: black;
+    left: 0;
+    padding: 1%;
+    gap: 4px;
+    width: 40%;
+    max-width: 222px;
+    min-width: 102px;
+}
+.dropdown-item {
+    width: 100%;
+}
+
+.phone-navbar-button  {
+    text-decoration: none;
+    background: rgb(76, 79, 77);
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+.menu-button {
+    background: rgb(76, 79, 77);
+    cursor: pointer;
+}
+.phone-navbar-button.active {
+    background: rgb(208, 212, 209) ;
+    transform: scale(0.95);
+    color: black;
+    font-weight: bold;
 }

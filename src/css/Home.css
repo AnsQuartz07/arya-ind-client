@@ -1,27 +1,65 @@
 .carousel-container {
-    /* width: 100%; */
-    padding: 20px;
-    background: #0a0a0a;
-    color: white;
+  /* width: 100%; */
+  padding: 20px;
+  background: #0a0a0a;
+  color: white;
+}
+
+.carousel-card {
+  /* background: #222; */
+  /* padding: 10px; */
+  border-radius: 10px;
+  text-align: center;
+}
+
+.carousel-card img {
+  width: 100%;
+  height: 120px; 
+  object-fit: cover; 
+  border-radius: 8px;
+}
+.carousel-card p {
+  white-space: nowrap;   
+  overflow: hidden;      
+  text-overflow: ellipsis;
+  font-size: 14px;
+}
+
+.advertisement {
+  display: flex;
+  background: black;
+}
+.ad-banner {
+  width: 60%;
+}
+.logo-image {
+  width: 100%;
+}
+.main-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.ad-banner-image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .advertisement {
+    flex-direction: column-reverse;
   }
-  
-  .carousel-card {
-    /* background: #222; */
-    /* padding: 10px; */
-    border-radius: 10px;
-    text-align: center;
-  }
-  
-  .carousel-card img {
+  .ad-banner {
     width: 100%;
-    height: 120px; 
-    object-fit: cover; 
-    border-radius: 8px;
+    aspect-ratio: 1/1;
   }
-  .carousel-card p {
-    white-space: nowrap;   
-    overflow: hidden;      
-    text-overflow: ellipsis;
-    font-size: 14px;
+  .ad-banner-image{
+    aspect-ratio: 1/1;
   }
-    
+}
+@media screen and (min-width: 1024px) {
+  .ad-banner-image {
+    height: 80vh;
+  }
+} 

@@ -35,12 +35,6 @@ const Home = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-        },
-        image: {
-            width: "100%",
-            height: "80vh",
-            objectFit: "cover",
-            borderRadius: "10px",
         }
     };
 
@@ -160,8 +154,8 @@ const Home = () => {
             <div className="banner">
                 <img className="banner-image" src={'https://i.postimg.cc/W3FGbd2c/equity.png'} alt="Banner" />
             </div>
-            <div style={{ display: 'flex', background: 'black' }}>
-                <div style={{ width: '60%' }}>
+            <div className='advertisement'>
+                <div className='ad-banner'>
                     <div style={styles.carouselWrapper}>
                         <div style={styles.carouselContainer}>
                             <Swiper
@@ -176,7 +170,7 @@ const Home = () => {
                             >
                                 {images.map((img, index) => (
                                     <SwiperSlide key={index} style={styles.slide}>
-                                        <img src={img} alt={`Slide ${index + 1}`} style={styles.image} />
+                                        <img className='ad-banner-image' src={img} alt={`Slide ${index + 1}`} />
                                     </SwiperSlide>
                                 ))}
                             </Swiper>
@@ -184,11 +178,10 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div  >
+                <div className='main-logo'>
                     <img
-                        style={{ padding: '10%' }}
                         src="/images/inde.gif"
-                        className="img-fluid"
+                        className="img-fluid logo-image"
                     />
                 </div>
             </div>

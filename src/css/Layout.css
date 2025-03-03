@@ -1,7 +1,6 @@
 .header {
     height: 10vh;
     background: black;
-    /* position: relative; */
     padding: 10px 4%;
     display: flex;
     justify-content: space-between;
@@ -11,29 +10,18 @@
     height: 13vh;
     background: black;
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: space-around;
+    padding: 2%;
 }
 .content{
     padding: 0 1%;
-}
-.logo {
-    /* position: absolute;
-    left: 7%; */
-    /* top: 27%; */
 }
 .categories{
     left: 24%;
     position: absolute;
     top: 32%;
-    /* display: flex; */
     gap: 10%;
-}
-.right-corner{
-    /* position: absolute;
-    right: 3%;
-    top: 15%; */
 }
 .footer-text {
     margin: 0;
@@ -48,4 +36,37 @@
     background: white;
     padding: 5px;
     align-items: center;
+}
+.phone-header {
+    background: black;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 10vh;
+    position: relative;
+}
+.search-button {
+    border: none;
+    background: black;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.pc-footer {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+    justify-content: space-between;
+    /* height: 14vh; */
+}
+@media  screen and (max-width: 1024px) {
+    .icon-box {
+        width: 53%;
+    }
+    .footer {
+        height: 15vh;
+        flex-direction: column;
+    }
 }
