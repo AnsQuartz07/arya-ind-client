@@ -70,3 +70,13 @@
         flex-direction: column;
     }
 }
+.logo {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.right-corner {
+    height: 100%;
+    width: 20%;
+}

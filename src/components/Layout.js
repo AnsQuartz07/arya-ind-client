@@ -78,10 +78,10 @@ const Layout = function (content) {
             {isMobile? (
                 <div className="phone-header" >
                     <Navbar category={categories} />
-                    <div className="logo" style={{height: '100%'}}>
+                    <div className="logo" >
                         <img style={{ height: "inherit"}} src="/images/inde.png" />
                     </div>
-                    <div className="right-corner" style={{height: '100%'}}>
+                    <div className="right-corner" >
                         <button className="search-button" style={{height: 'inherit'}} onClick={() => setOpenAuthPortal(true)}>
                             <img height={"inherit"} src='/images/auth.png' />
                         </button>
