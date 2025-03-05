@@ -22,10 +22,10 @@ const Navbar = (props) => {
     return (
         isMobile ? (
             <nav className='phone-navbar'>
-                <div className='dropdown-container'>
-                    <button className='menu-button' onClick={() => setShowDropdown(!showDropdown)}>
-                        {/* <Menu color='white' size={35}  /> */}
-                    </button>
+                <button className='menu-button' onClick={() => setShowDropdown(!showDropdown)}>
+                    <img className="menu-button-img" src='/images/menu.png' alt="Menu" />
+                </button>
+
                     {showDropdown && (
                         <ul className='dropdown-menu'>
                             {categories && categories.map((ele, index) => (
@@ -44,7 +44,6 @@ const Navbar = (props) => {
                             ))}
                         </ul>
                     )}
-                </div>
             </nav>
             ) : (
             <nav className='navbar'>
