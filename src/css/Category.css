@@ -1,10 +1,7 @@
-.video-container {
-    /* height: 168px; */
+.video-sec {
     display: flex;
     background: rgb(116, 114, 118);
-    border-radius: 8px;
-    margin: 1%;
-    padding: 2%;
+    max-width: 520px;
 }
 .lectureInfo {
     display: flex;
@@ -14,17 +11,25 @@
     padding: 3%;
 }
 .videoTitle{
+    font-weight: bold;
+    font-size: 20px;
     height: 60%;
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: normal;
     overflow: hidden;
+    border-bottom: 1px solid grey;
+}
+.videoInfo {
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid gray;
 }
 .lectures-sec {
     padding: 20px;
-    margin: 2%;
-    width: 56%;
-    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     background: rgb(168, 171, 168);
 }
 .mar0 {
@@ -36,4 +41,14 @@
 .videoSize {
     height: 100%;
     border-radius: 12px;
+}
+@media screen and (max-width: 850px) {
+    .video-sec {
+        max-width: 520px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .video-sec {
+        width: 100%;
+    }
 }

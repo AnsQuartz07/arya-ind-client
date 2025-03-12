@@ -1,41 +1,38 @@
+.fix-course-section {
+    height: 70vh;
+    width: 30%;
+    position: sticky;
+    top: 30px;
+}
 .course-section {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    /* gap: 20px; */
-    padding: 1%;
-    flex-wrap: wrap;
-    width: 30%;
-    height: 70vh;
-    /* background: linear-gradient(rgba(219, 110, 168, 0.6), rgba(86, 92, 209, 0.2)); */
-    border-radius: 22px;
-    position: sticky;
-    top: 30px; 
+    padding: 8% 3%;
+    width: 100%;
+    height: max-content;
+    gap: 5px;
 }
 
 .course-card {
     background:  rgb(105, 74, 244);
     color: white;
-    padding: 20px;
+    padding: 4%;
     border-radius: 8px;
     text-align: center;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* transition: transform 0.3s ease-in-out; */
 }
 
 
 .teacher-card {
-    /* flex-direction: row; */
     gap: 10px;
-    /* padding: 15px; */
-    height: 60%;
 }
 
 .teacher-img {
@@ -49,13 +46,19 @@
     display: flex;
     justify-content: space-between;
     padding: 2%;
+    gap: 20px;
 }
 .lectures-section {
     width: 58%;
-    /* background: linear-gradient(135deg, #ddd6f3, #faaca8); */
-    border-radius: 25px;
     padding: 20px;
-
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.video-section {
+    display: flex;
+    background: rgb(116, 114, 118);
+    max-width: 520px;
 }
 
 h2 {
@@ -63,4 +66,45 @@ h2 {
 }
 h3 {
     margin: 0;
+}
+
+@media screen and (max-width: 850px) {
+    .lectures-page {
+        flex-direction: column-reverse;
+    }
+    .fix-course-section {
+        position: inherit;
+        height: max-content;
+    }
+    .course-section {
+        width: 400px;
+    }
+    .course-card {
+        font-size: 20px;
+        padding: 2%;
+    }
+    .lectures-section {
+        width: 90%;
+    }
+    .video-section {
+        max-width: 520px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .fix-course-section {
+        width: 80%;
+        height: max-content;
+    }
+    .course-section {
+        width: 100%;
+        height: max-content;
+        gap: 5px;
+        border-radius: 10px;
+    }
+    .course-card {
+        font-size: 16px;
+    }
+    .video-section {
+        width: 100%;
+    }
 }

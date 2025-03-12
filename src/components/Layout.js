@@ -79,7 +79,7 @@ const Layout = function (content) {
                 <div className="phone-header" >
                     <Navbar category={categories} />
                     <div className="logo" >
-                        <img style={{ height: "inherit"}} src="/images/inde.png" />
+                        <img style={{ height: "70%"}} src="/images/inde.png" />
                     </div>
                     <div className="right-corner" >
                         <button className="search-button" style={{height: 'inherit'}} onClick={() => setOpenAuthPortal(true)}>
@@ -115,14 +115,6 @@ const Layout = function (content) {
 
                 </Routes>
                     <div className="footer">
-                        {!isMobile? (
-                            <div className="pc-footer">
-                                <p className="footer-text">Designed & Developed by:</p>
-                                <p className="footer-text">Anshu Kumar</p>
-                            </div>
-                        ) : (
-                            <p className="footer-text">Designed & Developed by: Anshu Kumar </p>
-                        )}
                         <div className="icon-box" >
                             <a href="https://www.instagram.com/call_me_anshu_____?igsh=MW4wM3kxNWZ4c210bw==" target="_blank" rel="noopener noreferrer">
                                 <FaInstagram style={{ color: "#E1306C", fontSize: "25px" }} />
@@ -140,6 +132,14 @@ const Layout = function (content) {
                                 <FaLinkedin style={{ color: "#0077B5", fontSize: "25px" }} />
                             </a>
                         </div>
+                        {!isMobile? (
+                            <div className="pc-footer">
+                                <p className="footer-text">Designed & Developed by:</p>
+                                <p className="footer-text">Anshu Kumar</p>
+                            </div>
+                        ) : (
+                            <p className="footer-text">Designed & Developed by: Anshu Kumar </p>
+                        )}
                     </div>
             </div>
         </BrowserRouter>

@@ -171,7 +171,8 @@ const Subjects = function (props) {
             setImageUrl('https://i.postimg.cc/Z54CDC2K/cbse.jpg');
             setButtonColor('135deg, #D8B5FF   , #38EF7D')
             setSubjects([{
-                name: 'Physics : Class X',
+                name: 'Physics',
+                class: 'Class - X',
                 teachers: [{
                     name: 'Lalit Kumar',
                     teacherId: 'phy01'
@@ -180,7 +181,8 @@ const Subjects = function (props) {
                     teacherId: 'phy02'
                 }]
             }, {
-                name: 'Chemistry : Class X',
+                name: 'Chemistry',
+                class: 'Class - X',
                 teachers: [{
                     name: 'Manoj Jha',
                     teacherId: 'ioc01'
@@ -189,7 +191,8 @@ const Subjects = function (props) {
                     teacherId: 'ioc02'
                 }]
             }, {
-                name: 'Biology : Class X',
+                name: 'Biology',
+                class: 'Class - X',
                 teachers: [{
                     name: 'Jaswant Charan',
                     teacherId: 'orgc01'
@@ -198,7 +201,8 @@ const Subjects = function (props) {
                     teacherId: 'orgc02'
                 }]
             }, {
-                name: 'Mathematics : Class X',
+                name: 'Mathematics',
+                class: 'Class - X',
                 teachers: [{
                     name: 'Girish Kumar Gupta',
                     teacherId: 'phc01'
@@ -207,7 +211,8 @@ const Subjects = function (props) {
                     teacherId: 'phc02'
                 }]
             }, {
-                name: 'English : Class X',
+                name: 'English',
+                class: 'Class - X',
                 teachers: [{
                     name: 'Girish Kumar Gupta',
                     teacherId: 'phc01'
@@ -216,7 +221,8 @@ const Subjects = function (props) {
                     teacherId: 'phc02'
                 }]
             }, {
-                name: 'Social Science : Class X',
+                name: 'Social Science',
+                class: 'Class - X',
                 teachers: [{
                     name: 'Girish Kumar Gupta',
                     teacherId: 'phc01'
@@ -225,7 +231,8 @@ const Subjects = function (props) {
                     teacherId: 'phc02'
                 }]
             }, {
-                name: 'Hindi : Class X',
+                name: 'Hindi',
+                class: 'Class - X',
                 teachers: [{
                     name: 'Girish Kumar Gupta',
                     teacherId: 'phc01'
@@ -234,7 +241,8 @@ const Subjects = function (props) {
                     teacherId: 'phc02'
                 }]
             }, {
-                name: 'Mathematics : Class XII',
+                name: 'Mathematics',
+                class: 'Class - XII',
                 teachers: [{
                     name: 'Girish Kumar Gupta',
                     teacherId: 'phc01'
@@ -243,7 +251,8 @@ const Subjects = function (props) {
                     teacherId: 'phc02'
                 }]
             }, {
-                name: 'Mathematics : Class XI',
+                name: 'Mathematics',
+                class: 'Class - XI',
                 teachers: [{
                     name: 'Girish Kumar Gupta',
                     teacherId: 'phc01'
@@ -252,7 +261,8 @@ const Subjects = function (props) {
                     teacherId: 'phc02'
                 }]
             }, {
-                name: 'Physics : Class XI',
+                name: 'Physics',
+                class: 'Class - XI',
                 teachers: [{
                     name: 'Girish Kumar Gupta',
                     teacherId: 'phc01'
@@ -261,7 +271,8 @@ const Subjects = function (props) {
                     teacherId: 'phc02'
                 }]
             }, {
-                name: 'Physics : Class XII',
+                name: 'Physics',
+                class: 'Class - XII',
                 teachers: [{
                     name: 'Girish Kumar Gupta',
                     teacherId: 'phc01'
@@ -270,7 +281,8 @@ const Subjects = function (props) {
                     teacherId: 'phc02'
                 }]
             }, {
-                name: 'Chemistry : Class XI',
+                name: 'Chemistry',
+                class: 'Class - XI',
                 teachers: [{
                     name: 'Girish Kumar Gupta',
                     teacherId: 'phc01'
@@ -279,7 +291,8 @@ const Subjects = function (props) {
                     teacherId: 'phc02'
                 }]
             }, {
-                name: 'Chemistry : Class XII',
+                name: 'Chemistry',
+                class: 'Class - XII',
                 teachers: [{
                     name: 'Girish Kumar Gupta',
                     teacherId: 'phc01'
@@ -288,7 +301,8 @@ const Subjects = function (props) {
                     teacherId: 'phc02'
                 }]
             }, {
-                name: 'Biology : Class XI',
+                name: 'Biology',
+                class: 'Class - XI',
                 teachers: [{
                     name: 'Girish Kumar Gupta',
                     teacherId: 'phc01'
@@ -297,7 +311,8 @@ const Subjects = function (props) {
                     teacherId: 'phc02'
                 }]
             }, {
-                name: 'Biology : Class XII',
+                name: 'Biology',
+                class: 'Class - XII',
                 teachers: [{
                     name: 'Girish Kumar Gupta',
                     teacherId: 'phc01'
@@ -306,7 +321,8 @@ const Subjects = function (props) {
                     teacherId: 'phc02'
                 }]
             }, {
-                name: 'English : Class XI',
+                name: 'English',
+                class: 'Class - XI',
                 teachers: [{
                     name: 'Girish Kumar Gupta',
                     teacherId: 'phc01'
@@ -315,7 +331,8 @@ const Subjects = function (props) {
                     teacherId: 'phc02'
                 }]
             }, {
-                name: 'English : Class XII',
+                name: 'English',
+                class: 'Class - XII',
                 teachers: [{
                     name: 'Girish Kumar Gupta',
                     teacherId: 'phc01'
@@ -324,7 +341,8 @@ const Subjects = function (props) {
                     teacherId: 'phc02'
                 }]
             }, {
-                name: 'Hindi : Class XI',
+                name: 'Hindi',
+                class: 'Class - XI',
                 teachers: [{
                     name: 'Girish Kumar Gupta',
                     teacherId: 'phc01'
@@ -333,7 +351,8 @@ const Subjects = function (props) {
                     teacherId: 'phc02'
                 }]
             }, {
-                name: 'Hindi : Class XII',
+                name: 'Hindi',
+                class: 'Class - XII',
                 teachers: [{
                     name: 'Girish Kumar Gupta',
                     teacherId: 'phc01'
@@ -342,7 +361,8 @@ const Subjects = function (props) {
                     teacherId: 'phc02'
                 }]
             }, {
-                name: 'Economics : Class XI',
+                name: 'Economics',
+                class: 'Class - XI',
                 teachers: [{
                     name: 'Girish Kumar Gupta',
                     teacherId: 'phc01'
@@ -351,7 +371,8 @@ const Subjects = function (props) {
                     teacherId: 'phc02'
                 }]
             }, {
-                name: 'Economics : Class XII',
+                name: 'Economics',
+                class: 'Class - XII',
                 teachers: [{
                     name: 'Girish Kumar Gupta',
                     teacherId: 'phc01'
@@ -360,7 +381,8 @@ const Subjects = function (props) {
                     teacherId: 'phc02'
                 }]
             }, {
-                name: 'Polity : Class XI',
+                name: 'Polity',
+                class: 'Class - XI',
                 teachers: [{
                     name: 'Girish Kumar Gupta',
                     teacherId: 'phc01'
@@ -369,7 +391,8 @@ const Subjects = function (props) {
                     teacherId: 'phc02'
                 }]
             }, {
-                name: 'Polity : Class XII',
+                name: 'Polity',
+                class: 'Class - XII',
                 teachers: [{
                     name: 'Shreedhar Babu',
                     teacherId: 'bio01'
@@ -378,7 +401,8 @@ const Subjects = function (props) {
                     teacherId: 'bio02'
                 }]
             }, {
-                name: 'Geography : Class XI',
+                name: 'Geography',
+                class: 'Class - XI',
                 teachers: [{
                     name: 'Girish Kumar Gupta',
                     teacherId: 'phc01'
@@ -387,7 +411,8 @@ const Subjects = function (props) {
                     teacherId: 'phc02'
                 }]
             }, {
-                name: 'Geography : Class XII',
+                name: 'Geography',
+                class: 'Class - XII',
                 teachers: [{
                     name: 'Girish Kumar Gupta',
                     teacherId: 'phc01'
@@ -396,7 +421,8 @@ const Subjects = function (props) {
                     teacherId: 'phc02'
                 }]
             }, {
-                name: 'History : Class XI',
+                name: 'History',
+                class: 'Class - XI',
                 teachers: [{
                     name: 'Girish Kumar Gupta',
                     teacherId: 'phc01'
@@ -405,7 +431,8 @@ const Subjects = function (props) {
                     teacherId: 'phc02'
                 }]
             }, {
-                name: 'History : Class XII',
+                name: 'History',
+                class: 'Class - XII',
                 teachers: [{
                     name: 'Girish Kumar Gupta',
                     teacherId: 'phc01'
@@ -490,7 +517,8 @@ const Subjects = function (props) {
                             style={{ background: `linear-gradient(${buttonColor ? buttonColor : '135deg, #C6EA8D ,  #FE90AF'})` }}
                             onClick={() => navigate("/teachers", { state: { course: title, sub, buttonColor, imageUrl } })}
                         >
-                            <h1>{sub.name}</h1>
+                            <p className="mar0">{sub.name}</p>
+                            {sub.class && <p className="mar0" style={{color: "purple"}}>{sub.class}</p>}
                         </div>
                     )
                 })}

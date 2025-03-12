@@ -1,13 +1,10 @@
 .carousel-container {
-  /* width: 100%; */
   padding: 20px;
   background: #0a0a0a;
   color: white;
 }
 
 .carousel-card {
-  /* background: #222; */
-  /* padding: 10px; */
   border-radius: 10px;
   text-align: center;
 }
@@ -63,3 +60,13 @@
     height: 80vh;
   }
 } 
+.horizontal-scroll {
+  display: flex;
+  overflow: auto;
+}
+.horizontal-scroll::-webkit-scrollbar {
+  display: none;
+}
+.phone-carousel-card {
+  padding: 0 1%;
+}

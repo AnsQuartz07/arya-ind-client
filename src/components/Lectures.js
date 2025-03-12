@@ -8,7 +8,7 @@ const videoData = [{
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',
     course: 'JEE',
-    videoUrl: 'https://www.youtube.com/embed/7HKZmzJtzY8?si=u6VnaH6FGrkDa_7o',
+    videoUrl: 'https://www.youtube.com/embed/7HKZmzJtzY8?si=u6VnaH6FGrkDa_7o&modestbranding=1&rel=0',
     videoColor: '135deg, #BFF098,  #6FD6FF',
     views: '5.3k'
 }, {
@@ -17,7 +17,7 @@ const videoData = [{
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',
     course: 'JEE',
-    videoUrl: 'https://www.youtube.com/embed/pybhlOhXkiM?si=a24hD9tXtULhfXkL',
+    videoUrl: 'https://www.youtube.com/embed/pybhlOhXkiM?si=a24hD9tXtULhfXkL&modestbranding=1&rel=0',
     videoColor: '135deg, #BFF098,  #6FD6FF',
     views: '5.3k'
 }, {
@@ -26,7 +26,7 @@ const videoData = [{
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',
     course: 'JEE',
-    videoUrl: 'https://www.youtube.com/embed/_gOz-V4RtGA?si=ivU2igWoKJBDnKAB',
+    videoUrl: 'https://www.youtube.com/embed/_gOz-V4RtGA?si=ivU2igWoKJBDnKAB&modestbranding=1&rel=0',
     videoColor: '135deg, #BFF098,  #6FD6FF',
     views: '5.3k'
 }, {
@@ -35,7 +35,7 @@ const videoData = [{
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',
     course: 'JEE',
-    videoUrl: 'https://www.youtube.com/embed/3-UwU0h9wOc?si=GKimNjKDMZbkkIVH',
+    videoUrl: 'https://www.youtube.com/embed/3-UwU0h9wOc?si=GKimNjKDMZbkkIVH&modestbranding=1&rel=0',
     videoColor: '135deg, #BFF098,  #6FD6FF',
     views: '5.3k'
 }, {
@@ -44,7 +44,7 @@ const videoData = [{
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',
     course: 'JEE',
-    videoUrl: 'https://www.youtube.com/embed/Hdd9tcs6Jwk?si=hO0BSycN398nPb2S',
+    videoUrl: 'https://www.youtube.com/embed/Hdd9tcs6Jwk?si=hO0BSycN398nPb2S&modestbranding=1&rel=0',
     videoColor: '135deg, #BFF098,  #6FD6FF',
     views: '5.3k'
 }, {
@@ -53,7 +53,7 @@ const videoData = [{
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',
     course: 'JEE',
-    videoUrl: 'https://www.youtube.com/embed/zkCKx3fpk4Q?si=Rhl9q2D52HmCrLgs',
+    videoUrl: 'https://www.youtube.com/embed/zkCKx3fpk4Q?si=Rhl9q2D52HmCrLgs&modestbranding=1&rel=0',
     videoColor: '135deg, #BFF098,  #6FD6FF',
     views: '5.3k'
 },{
@@ -62,7 +62,7 @@ const videoData = [{
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',
     course: 'JEE',
-    videoUrl: 'https://www.youtube.com/embed/foPlxyPuLgk?si=rNcPGENgIWPnSelQ',
+    videoUrl: 'https://www.youtube.com/embed/foPlxyPuLgk?si=rNcPGENgIWPnSelQ&modestbranding=1&rel=0',
     videoColor: '135deg, #BFF098,  #6FD6FF',
     views: '5.3k'
 }, {
@@ -71,7 +71,7 @@ const videoData = [{
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',
     course: 'JEE',
-    videoUrl: 'https://www.youtube.com/embed/YpyXVkqkQgg?si=2EK4-IHfwgeG-Otd',
+    videoUrl: 'https://www.youtube.com/embed/YpyXVkqkQgg?si=2EK4-IHfwgeG-Otd&modestbranding=1&rel=0',
     videoColor: '135deg, #BFF098,  #6FD6FF',
     views: '5.3k'
 }, {
@@ -80,7 +80,7 @@ const videoData = [{
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',
     course: 'JEE',
-    videoUrl: 'https://www.youtube.com/embed/ZAqIoDhornk?si=u5cfn-fzwdmHX_ob',
+    videoUrl: 'https://www.youtube.com/embed/ZAqIoDhornk?si=u5cfn-fzwdmHX_ob&modestbranding=1&rel=0',
     videoColor: '135deg, #BFF098,  #6FD6FF',
     views: '5.3k'
 }, {
@@ -89,7 +89,7 @@ const videoData = [{
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',
     course: 'JEE',
-    videoUrl: 'https://www.youtube.com/embed/FEuSURHQSXs?si=_BUAIWXr67ie3Sgb',
+    videoUrl: 'https://www.youtube.com/embed/FEuSURHQSXs?si=_BUAIWXr67ie3Sgb&modestbranding=1&rel=0',
     videoColor: '135deg, #BFF098,  #6FD6FF',
     views: '5.3k'
 }, {
@@ -98,7 +98,7 @@ const videoData = [{
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',
     course: 'JEE',
-    videoUrl: 'https://www.youtube.com/embed/P60TX-dwd4s?si=AdyslQbg3Ev8to6B',
+    videoUrl: 'https://www.youtube.com/embed/P60TX-dwd4s?si=AdyslQbg3Ev8to6B&modestbranding=1&rel=0',
     videoColor: '135deg, #BFF098,  #6FD6FF',
     views: '5.3k'
 }, {
@@ -107,7 +107,7 @@ const videoData = [{
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',
     course: 'JEE',
-    videoUrl: 'https://www.youtube.com/embed/wXc2tao51D4?si=vRVsB7HSJvV_ZmBd',
+    videoUrl: 'https://www.youtube.com/embed/wXc2tao51D4?si=vRVsB7HSJvV_ZmBd&modestbranding=1&rel=0',
     videoColor: '135deg, #BFF098,  #6FD6FF',
     views: '5.3k'
 }, {
@@ -116,7 +116,7 @@ const videoData = [{
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',
     course: 'JEE',
-    videoUrl: 'https://www.youtube.com/embed/Oa0ZHfcalCM?si=hqM9vBbPr5BvXT1_',
+    videoUrl: 'https://www.youtube.com/embed/Oa0ZHfcalCM?si=hqM9vBbPr5BvXT1_&modestbranding=1&rel=0',
     videoColor: '135deg, #BFF098,  #6FD6FF',
     views: '5.3k'
 }, {
@@ -125,7 +125,7 @@ const videoData = [{
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',
     course: 'JEE',
-    videoUrl: 'https://www.youtube.com/embed/ZII3PQ3QkIQ?si=dSj8YJLIsTyWKTZH',
+    videoUrl: 'https://www.youtube.com/embed/ZII3PQ3QkIQ?si=dSj8YJLIsTyWKTZH&modestbranding=1&rel=0',
     videoColor: '135deg, #BFF098,  #6FD6FF',
     views: '5.3k'
 }]
@@ -142,14 +142,14 @@ function Lectures(props) {
     return (
         <div className='lectures-page'>
             <div className='lectures-section' style={{background: `linear-gradient( ${teacherInfo.buttonColor})`}}>
-                <h1 style={{marginLeft: '2%'}}>All Lectures : </h1>
-                <div>
+                <p style={{marginLeft: '2%', fontSize: '24px', fontWeight: 'bold'}}>All Lectures : </p>
                     {data.map((ele) => {
                         return (
-                            <div className="video-container" >
+                            <div className="video-section" >
                                 <iframe
-                                    style={{borderRadius: '8px'}}
+                                    style={{ width: '65%'}}
                                     src={ele.videoUrl}
+                                    loading="lazy"
                                     title="YouTube video player"
                                     frameBorder="0"
                                     height='100%'
@@ -158,34 +158,35 @@ function Lectures(props) {
                                     allowFullScreen>
                                 </iframe>
                                 {/* <img className="videoSize" src='https://travellerscribe.com/wp-content/uploads/2023/07/Lal-Qila-Delhi.webp'></img> */}
-                            <div className="lectureInfo">
-                                <h3 className="videoTitle mar0">{ele.title}</h3>
-                                {/* <p className="mar0">{ele.subject} : {ele.teacher}</p> */}
-                                <p className="mar0">{ele.views} views</p>
+                                <div className="lectureInfo">
+                                    <h3 className="videoTitle mar0">{ele.title}</h3>
+                                    {/* <p className="mar0">{ele.subject} : {ele.teacher}</p> */}
+                                    <p className="mar0">{ele.views} views</p>
+                                </div>
                             </div>
-                        </div>
                         )
                     })}
-                </div>
             </div>
-            <div className="course-section" style={{background: `linear-gradient( ${teacherInfo.buttonColor})`}}>
-                <div className="course-card">
-                    <h2>{teacherInfo.subject}</h2>
-                </div>
+            <div className="fix-course-section">
+                <div className="course-section" style={{background: `linear-gradient( ${teacherInfo.buttonColor})`}}>
+                    <div className="course-card">
+                        <p className='mar0'>{teacherInfo.subject}</p>
+                    </div>
 
-                <div className="course-card">
-                    <h3 >{teacherInfo.course}</h3>
-                </div>
+                    <div className="course-card">
+                        <p className='mar0' >{teacherInfo.course}</p>
+                    </div>
 
-                <div className="course-card teacher-card">
-                    <img
-                        src="https://i.postimg.cc/fb0P1T6k/vikash.jpg"
-                        alt="Amitabh Sharma"
-                        className="teacher-img"
-                    />
-                    <div>
-                        <h3>{teacherInfo.name}</h3>
-                        <p>Experience: 11 years</p>
+                    <div className="course-card teacher-card">
+                        <img
+                            src="https://i.postimg.cc/fb0P1T6k/vikash.jpg"
+                            alt="Amitabh Sharma"
+                            className="teacher-img"
+                        />
+                        <div style={{fontSize: '16px'}}>
+                            <p>{teacherInfo.name}</p>
+                            <p>Experience: 11 years</p>
+                        </div>
                     </div>
                 </div>
             </div>

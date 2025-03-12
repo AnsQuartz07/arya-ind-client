@@ -42,7 +42,7 @@ const Teachers = function ({ props, placeholder = "" }) {
                             style={{ background: `linear-gradient(${buttonColor ? buttonColor : '135deg, #C6EA8D ,  #FE90AF'})` }}
                             onClick={() => navigate("/lectures", {state: {...t, buttonColor, subject: title, course: state.course}, })}
                         >
-                            <h1>{t.name}</h1>
+                            <p>{t.name}</p>
                         </div>
                     )
                 })}

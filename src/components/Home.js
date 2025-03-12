@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { AiOutlineSearch } from 'react-icons/ai'; // Import the search icon
 import '../css/Searchbar.css';
 import Layout from './Layout';
@@ -120,6 +120,27 @@ const Home = () => {
             img: "https://lalqila.com/wp-content/uploads/2024/08/g7.jpg",
         },
     ];
+    const categoryData = [{
+        categoryName: "Continue Watching...",
+        catUrl: "hist",
+        filterredVideos: videoData
+    }, {
+        categoryName: "Recommended Lectures",
+        catUrl: "recom",
+        filterredVideos: videoData
+    }, {
+        categoryName: "Most Popular Videos",
+        catUrl: "pop",
+        filterredVideos: videoData
+    }]
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 1025);
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 1025);
+        };
+        window.addEventListener('resize', handleResize, { passive: true });
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
     console.log('asdfghjkjhgfds    ', videoData)
     const swiperFunction = (slides) => {
         return (<Swiper
@@ -148,6 +169,39 @@ const Home = () => {
                 </SwiperSlide>
             ))}
         </Swiper>)
+    }
+    const framerFunction = (videos) => {
+        return (
+            <div className='horizontal-scroll'>
+                {videos.map ((v, index) => (
+                    <div className="phone-carousel-card">
+                        <iframe
+                            src={v.videoUrl}
+                            title="YouTube video player"
+                            frameBorder="0"
+                            width='120px'
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen>
+                        </iframe>
+                        <p style={{margin: 0}} className='carousel-card p'>{v.title}</p>
+                    </div>
+                ))}
+            </div>
+        )
+    }
+    const categoryFunction = function (category) {
+        return (
+            <div className="carousel-container">
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <h2>{category.categoryName}</h2>
+                    <a href={'/category?cat=' + category.catUrl } style={{ height: '28px' }}>
+                        <button style={{ cursor: 'pointer' }} >Show more</button>
+                    </a>
+                </div>
+                {isMobile ? framerFunction(category.filterredVideos) : swiperFunction(category.filterredVideos)}
+            </div>
+        )
     }
     return (
         <div >
@@ -185,33 +239,7 @@ const Home = () => {
                     />
                 </div>
             </div>
-            <div className="carousel-container">
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <h1>Continue Watching...</h1>
-                    <a href='/category?cat=hist' style={{ height: '28px' }}>
-                        <button style={{ cursor: 'pointer' }} >Show more</button>
-                    </a>
-                </div>
-                {swiperFunction(videoData)}
-            </div>
-            <div className="carousel-container">
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <h1>Recommended Lectures</h1>
-                    <a href='/category?cat=recom' style={{ height: '28px' }}>
-                        <button style={{ cursor: 'pointer' }} >Show more</button>
-                    </a>
-                </div>
-                {swiperFunction(videoData)}
-            </div>
-            <div className="carousel-container">
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <h1>Most Popular Videos</h1>
-                    <a href='/category?cat=pop' style={{ height: '28px' }}>
-                        <button style={{ cursor: 'pointer' }} >Show more</button>
-                    </a>
-                </div>
-                {swiperFunction(videoData)}
-            </div>
+            {categoryData.map((category) => categoryFunction(category))}
         </div>
     );
 
