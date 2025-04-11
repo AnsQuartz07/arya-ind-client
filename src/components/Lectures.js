@@ -4,6 +4,9 @@ import '../css/Lectures.css';
 
 const videoData = [{
     videoId: 'cbse_maths01_png',
+    moduleId: 'cbse_maths_png',
+    createdAt: new Date(),
+    isDeleted: false,
     title: 'Maths Lec-01',
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',
@@ -13,6 +16,9 @@ const videoData = [{
     views: '5.3k'
 }, {
     videoId: 'cbse_maths02_png',
+    moduleId: 'cbse_maths_png',
+    createdAt: new Date(),
+    isDeleted: false,
     title: 'Maths Lec-02',
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',
@@ -22,6 +28,9 @@ const videoData = [{
     views: '5.3k'
 }, {
     videoId: 'cbse_maths03_png',
+    moduleId: 'cbse_maths_png',
+    createdAt: new Date(),
+    isDeleted: false,
     title: 'Maths Lec-03',
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',
@@ -31,6 +40,9 @@ const videoData = [{
     views: '5.3k'
 }, {
     videoId: 'cbse_maths04_png',
+    moduleId: 'cbse_maths_png',
+    createdAt: new Date(),
+    isDeleted: false,
     title: 'Maths Lec-04',
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',
@@ -40,6 +52,9 @@ const videoData = [{
     views: '5.3k'
 }, {
     videoId: 'cbse_maths05_png',
+    moduleId: 'cbse_maths_png',
+    createdAt: new Date(),
+    isDeleted: false,
     title: 'Maths Lec-05',
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',
@@ -49,6 +64,9 @@ const videoData = [{
     views: '5.3k'
 }, {
     videoId: 'cbse_maths06_png',
+    moduleId: 'cbse_maths_png',
+    createdAt: new Date(),
+    isDeleted: false,
     title: 'Maths Lec-06',
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',
@@ -58,6 +76,9 @@ const videoData = [{
     views: '5.3k'
 },{
     videoId: 'cbse_maths07_png',
+    moduleId: 'cbse_maths_png',
+    createdAt: new Date(),
+    isDeleted: false,
     title: 'Maths Lec-07',
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',
@@ -67,6 +88,9 @@ const videoData = [{
     views: '5.3k'
 }, {
     videoId: 'cbse_maths08_png',
+    moduleId: 'cbse_maths_png',
+    createdAt: new Date(),
+    isDeleted: false,
     title: 'Maths Lec-08',
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',
@@ -76,6 +100,9 @@ const videoData = [{
     views: '5.3k'
 }, {
     videoId: 'cbse_maths09_png',
+    moduleId: 'cbse_maths_png',
+    createdAt: new Date(),
+    isDeleted: false,
     title: 'Maths Lec-09',
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',
@@ -85,6 +112,9 @@ const videoData = [{
     views: '5.3k'
 }, {
     videoId: 'cbse_maths10_png',
+    moduleId: 'cbse_maths_png',
+    createdAt: new Date(),
+    isDeleted: false,
     title: 'Maths Lec-10',
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',
@@ -94,6 +124,9 @@ const videoData = [{
     views: '5.3k'
 }, {
     videoId: 'cbse_maths11_png',
+    moduleId: 'cbse_maths_png',
+    createdAt: new Date(),
+    isDeleted: false,
     title: 'Maths Lec-11',
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',
@@ -103,6 +136,9 @@ const videoData = [{
     views: '5.3k'
 }, {
     videoId: 'cbse_maths12_png',
+    moduleId: 'cbse_maths_png',
+    createdAt: new Date(),
+    isDeleted: false,
     title: 'Maths Lec-12',
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',
@@ -112,6 +148,9 @@ const videoData = [{
     views: '5.3k'
 }, {
     videoId: 'cbse_maths14_png',
+    moduleId: 'cbse_maths_png',
+    createdAt: new Date(),
+    isDeleted: false,
     title: 'Maths Lec-14',
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',
@@ -121,6 +160,9 @@ const videoData = [{
     views: '5.3k'
 }, {
     videoId: 'cbse_maths15_png',
+    moduleId: 'cbse_maths_png',
+    createdAt: new Date(),
+    isDeleted: false,
     title: 'Maths Lec-15',
     subject: 'Mathematics',
     teacher: 'Pradeep Nagar',

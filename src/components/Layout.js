@@ -3,15 +3,14 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { FaInstagram, FaFacebook, FaGithub, FaYoutube, FaLinkedin } from "react-icons/fa";
 
 import '../css/Layout.css';
-import Miscelleneous from "../Page/Miscelleneous";
 import Navbar from "./Navbar";
 import Home from "./Home";
-import Searchbar from "./Searchbar";
 import Backaction from '../Page/Backaction';
 import Category from "./Category.js";
 import Subjects from "./Subjects.js";
 import Teachers from "./Teachers.js";
 import Lectures from "./Lectures.js";
+import Authportal from "./Authportal.js";
 const arr = [
     {
         name: "Home",
@@ -44,6 +43,8 @@ const Layout = function (content) {
     const [videos, setVideos] = useState([]);
     const [isMobile, setIsMobile] = useState(window.innerWidth < 1025);
     const [openAuthPortal, setOpenAuthPortal] = useState(false);
+    const [resetHandler, setResetHandler] = useState(() => () => {});
+
     useEffect(() => {
         setCategories(arr);
     }, [])
@@ -54,10 +55,7 @@ const Layout = function (content) {
         window.addEventListener('resize', handleResize, { passive: true });
         return () => window.removeEventListener('resize', handleResize);
     }, []);
-    // useEffect(function, [])
-    const openNewPage = (category) => {
-    }
-    // const history = useHistory();
+
     const onSearch = (e) => {
         // history.push(`/search?query=${e}`)
         Backaction.getSearchList(e).then(items => {
@@ -68,13 +66,20 @@ const Layout = function (content) {
                 }
             }));
         })
-        // window.location.href = `/search?query=${e}`;
-
     }
     return (
         <BrowserRouter>
-
             <div >
+            { openAuthPortal && 
+                <div className='auth-background'
+                    style={{ background: 'balck' }}
+                    onClick={() => {
+                        setOpenAuthPortal(false);
+                        resetHandler();
+                    }}>
+                    <Authportal setOpenAuthPortal = {setOpenAuthPortal} setResetHandler={setResetHandler}/>
+                </div>
+            }
             {isMobile? (
                 <div className="phone-header" >
                     <Navbar category={categories} />
@@ -85,7 +90,6 @@ const Layout = function (content) {
                         <button className="search-button" style={{height: 'inherit'}} onClick={() => setOpenAuthPortal(true)}>
                             <img height={"inherit"} src='/images/auth.png' />
                         </button>
-                        {/* {openAuthPortal && (<AuthPortal />)} */}
                     </div>
                 </div> 
                 ) : (
@@ -98,7 +102,6 @@ const Layout = function (content) {
                         <button className="search-button" onClick={() => setOpenAuthPortal(true)}>
                             <img width={"100%"} src='/images/auth.png' />
                         </button>
-                        {/* {openAuthPortal && (<AuthPortal />)} */}
                     </div>
                 </div> 
                 )}
