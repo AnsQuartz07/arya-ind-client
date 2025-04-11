@@ -139,7 +139,7 @@ const Authportal = ({ setOpenAuthPortal, setResetHandler }) => {
                     }
                 })
                 .catch(({ response }) => {
-                    console.log('Server side error [loginSubmit]', e);
+                    console.log('Server side error [loginSubmit]', response);
                     setClientError(response.data.message);
                 })
         }
