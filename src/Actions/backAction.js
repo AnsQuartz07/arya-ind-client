@@ -13,7 +13,8 @@ const login = async function (data) {
     const payload = { email: data.email, password: data.password1 };
     const result = await axios.post(
         `${process.env.REACT_APP_API_URL}/api/user/login`,
-        payload
+        payload,
+        { withCredentials: true }
     );
     return result;
 };
